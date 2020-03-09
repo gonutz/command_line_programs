@@ -1,3 +1,18 @@
+Install
+=======
+
+You need [Go](https://golang.org/).
+
+Then call
+
+    go get -u github.com/gonutz/command_line_programs/...
+
+The option `-u` is to pull the latest online version.
+
+
+Programs
+========
+
 ```
 non_empty - Print only lines that are not empty.
             Lines containing spaces are not empty.
