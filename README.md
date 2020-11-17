@@ -19,13 +19,14 @@ non_empty - Print only lines that are not empty.
 
 trim_space - Print every line with starting and trailing white space removed.
 
-sort_by_number_at_line_start - Extract the longest possible integer number (base 10) from the start of a
-                               line and sort lines by it.
+sort_by_number_at_line_start - Extract the longest possible integer number (base 10)
+                               from the start of a line and sort lines by it.
                                0 is assumed for lines that do not start with a number.
 
 count_lines - Print the number of lines. Ignores the last line if it is empty.
 
 replace_all - replaces the first argument with the second for the standard input.
 
-first - Output the first N bytes of the input. Outputs all if no N is given or if the argument is not a number.
+first - Output the first N bytes of the input. Outputs all if no N is given or if the
+        argument is not a number.
 ```
