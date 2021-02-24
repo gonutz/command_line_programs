@@ -16,6 +16,8 @@ Programs
 ```
 count_lines - Print the number of lines. Ignores the last line if it is empty.
 
+field - Select a space separated field from standard input by index.
+
 first - Output the first N bytes of the input. Outputs all if no N is given or if the
         argument is not a number.
 
