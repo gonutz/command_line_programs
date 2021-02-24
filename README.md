@@ -31,6 +31,8 @@ replace_all - replaces the first argument with the second for the standard input
 
 skip - discard the first N bytes of the input and output the rest.
 
+sleep - Wait for the given duration.
+
 sort_by_number_at_line_start - Extract the longest possible integer number (base 10)
                                from the start of a line and sort lines by it.
                                0 is assumed for lines that do not start with a number.
