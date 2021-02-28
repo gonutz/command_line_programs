@@ -24,6 +24,9 @@ field - Select a space separated field from standard input by index.
 first - Output the first N bytes of the input. Outputs all if no N is given or if the
         argument is not a number.
 
+line - Print the line at a given index, starting at 0. line 0 prints the first line
+       from standard input, line 1 prints the second line, line 2 the third, etc.
+
 line_index - Print the index of the first matching line in standard input. Prints -1
              if the given line cannot be found on standard input.
 
