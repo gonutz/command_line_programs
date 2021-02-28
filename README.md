@@ -16,6 +16,9 @@ Programs
 ```
 count_lines - Print the number of lines. Ignores the last line if it is empty.
 
+dedup - De-duplicate lines: print lines from standard input only once, the next time
+        a line is encountered it is not printed again.
+
 field - Select a space separated field from standard input by index.
 
 first - Output the first N bytes of the input. Outputs all if no N is given or if the
