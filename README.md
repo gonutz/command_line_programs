@@ -14,6 +14,9 @@ Programs
 ========
 
 ```
+append_to_lines - append the given string to all lines in standard input and print
+                  the new lines to standard output.
+
 count_lines - Print the number of lines. Ignores the last line if it is empty.
 
 dedup - De-duplicate lines: print lines from standard input only once, the next time
