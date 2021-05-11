@@ -38,6 +38,9 @@ line_index - Print the index of the first matching line in standard input. Print
 non_empty - Print only lines that are not empty.
             Lines containing spaces are not empty.
 
+png - Convert a JPEG/BMP/PNG/GIF image from standard input to PNG and write the
+      result to standard output.
+
 replace_all - replaces the first argument with the second for the standard input.
 
 skip - discard the first N bytes of the input and output the rest.
