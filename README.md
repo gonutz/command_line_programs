@@ -56,4 +56,8 @@ sort_by_number_at_line_start - Extract the longest possible integer number (base
                                0 is assumed for lines that do not start with a number.
 
 trim_space - Print every line with starting and trailing white space removed.
+
+unzip - Unpack a zip archive.
+
+zip - Pack a file or folder into a zip archive.
 ```
