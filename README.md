@@ -21,7 +21,7 @@ base64 - Convert standard input to base 64 and write the result to standard outp
 
 count - Print the number of bytes/lines/letters (use one of these as the argument).
         Reads standard input and writes the number to standard output. In case of
-		an error it writes 0 to standard output and the error to standard error.
+        an error it writes 0 to standard output and the error to standard error.
 
 count_lines - Print the number of lines. Ignores the last line if it is empty.
 
