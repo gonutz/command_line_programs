@@ -31,15 +31,13 @@ func usage() error {
 `, os.Args[0])
 }
 
-func count(args []string, r io.Reader) (uint64, error) {
+func count(args []string, r io.Reader) (int64, error) {
 	isArg := func(arg string) bool {
 		return len(args) == 1 && args[0] == arg
 	}
 
 	if isArg("bytes") {
-		var w lineCounter
-		_, err := io.Copy(&w, r)
-		return w.totalBytes, err
+		return io.Copy(io.Discard, r)
 	} else if isArg("lines") {
 		return new(lineCounter).countAll(r)
 	} else if isArg("letters") {
@@ -50,10 +48,10 @@ func count(args []string, r io.Reader) (uint64, error) {
 }
 
 type lineCounter struct {
-	totalBytes, lines uint64
+	totalBytes, lines int64
 }
 
-func (w *lineCounter) countAll(r io.Reader) (uint64, error) {
+func (w *lineCounter) countAll(r io.Reader) (int64, error) {
 	w.lines = 1
 	_, err := io.Copy(w, r)
 	if err != nil {
@@ -66,7 +64,7 @@ func (w *lineCounter) countAll(r io.Reader) (uint64, error) {
 }
 
 func (w *lineCounter) Write(b []byte) (int, error) {
-	w.totalBytes += uint64(len(b))
+	w.totalBytes += int64(len(b))
 	for _, b := range b {
 		if b == '\n' {
 			w.lines++
@@ -76,12 +74,12 @@ func (w *lineCounter) Write(b []byte) (int, error) {
 }
 
 type utf8counter struct {
-	count uint64
+	count int64
 	skip  int
 	err   error
 }
 
-func (w *utf8counter) countAll(r io.Reader) (uint64, error) {
+func (w *utf8counter) countAll(r io.Reader) (int64, error) {
 	// Read the first 3 bytes separately, they might contain the byte order mark
 	// (BOM) for UTF-8. If it is the BOM, we do not count it as a letter.
 	// See below, after reading everything we subtract the first letter if it
