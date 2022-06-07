@@ -11,8 +11,9 @@ func main() {
 	n, err := count(os.Args[1:], os.Stdin)
 	if err != nil {
 		fmt.Fprint(os.Stderr, err.Error())
+	} else {
+		fmt.Fprint(os.Stdout, n)
 	}
-	fmt.Fprint(os.Stdout, n)
 }
 
 func usage() error {
