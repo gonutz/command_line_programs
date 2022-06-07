@@ -18,7 +18,7 @@ func main() {
 func usage() error {
 	return fmt.Errorf(`usage: %s bytes/lines/letters
 
-  Counts the number of specified items in standard in put and prints the number
+  Counts the number of specified items in standard input and prints the number
   to standard output. If an error occurs, nothing is printed to standard output
   and the error is printed to standard error.
 
