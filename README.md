@@ -31,7 +31,12 @@ dedup - De-duplicate lines: print lines from standard input only once, the next 
 field - Select a space separated field from standard input by index.
 
 first - Output the first N bytes of the input. Outputs all if no N is given or if the
-        argument is not a number.
+        argument is not a number. Call like this:
+		first 5 < file
+		first byte < file
+		first 5 bytes < file
+		first line < file
+		first 5 lines < file
 
 last - Output the last N lines of standard input. Call like this:
        last line < file
