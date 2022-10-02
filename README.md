@@ -33,6 +33,10 @@ field - Select a space separated field from standard input by index.
 first - Output the first N bytes of the input. Outputs all if no N is given or if the
         argument is not a number.
 
+last - Output the last N lines of standard input. Call like this:
+       last line < file
+	   last 5 lines < file
+
 line - Print the line at a given index, starting at 0. line 0 prints the first line
        from standard input, line 1 prints the second line, line 2 the third, etc.
 
