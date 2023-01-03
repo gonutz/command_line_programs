@@ -61,6 +61,8 @@ sort_by_number_at_line_start - Extract the longest possible integer number (base
                                from the start of a line and sort lines by it.
                                0 is assumed for lines that do not start with a number.
 
+timer - Simple timing tool, press ENTER to take times, quit with Ctrl+C.
+
 trim_space - Print every line with starting and trailing white space removed.
 
 unzip - Unpack a zip archive.
