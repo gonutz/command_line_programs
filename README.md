@@ -5,10 +5,7 @@ You need [Go](https://golang.org/).
 
 Then call
 
-    go get -u github.com/gonutz/command_line_programs/...
-
-The option `-u` is to pull the latest online version.
-
+    go install github.com/gonutz/command_line_programs/...@latest
 
 Programs
 ========
